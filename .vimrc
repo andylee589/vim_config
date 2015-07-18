@@ -135,28 +135,28 @@ nmap <Leader>ch :A<CR>
 " 子窗口中显示 *.cpp 或 *.h
 nmap <Leader>sch :AS<CR>
 let g:SignatureMap = {
-        \ 'Leader'             :  "m",
-        \ 'PlaceNextMark'      :  "m,",
-        \ 'ToggleMarkAtLine'   :  "m.",
-        \ 'PurgeMarksAtLine'   :  "m-",
-        \ 'DeleteMark'         :  "dm",
-        \ 'PurgeMarks'         :  "mda",
-        \ 'PurgeMarkers'       :  "m<BS>",
-        \ 'GotoNextLineAlpha'  :  "']",
-        \ 'GotoPrevLineAlpha'  :  "'[",
-        \ 'GotoNextSpotAlpha'  :  "`]",
-        \ 'GotoPrevSpotAlpha'  :  "`[",
-        \ 'GotoNextLineByPos'  :  "]'",
-        \ 'GotoPrevLineByPos'  :  "['",
-        \ 'GotoNextSpotByPos'  :  "mn",
-        \ 'GotoPrevSpotByPos'  :  "mp",
-        \ 'GotoNextMarker'     :  "[+",
-        \ 'GotoPrevMarker'     :  "[-",
-        \ 'GotoNextMarkerAny'  :  "]=",
-        \ 'GotoPrevMarkerAny'  :  "[=",
-        \ 'ListLocalMarks'     :  "ms",
-        \ 'ListLocalMarkers'   :  "m?"
-        \ }
+            \ 'Leader'             :  "m",
+            \ 'PlaceNextMark'      :  "m,",
+            \ 'ToggleMarkAtLine'   :  "m.",
+            \ 'PurgeMarksAtLine'   :  "m-",
+            \ 'DeleteMark'         :  "dm",
+            \ 'PurgeMarks'         :  "mda",
+            \ 'PurgeMarkers'       :  "m<BS>",
+            \ 'GotoNextLineAlpha'  :  "']",
+            \ 'GotoPrevLineAlpha'  :  "'[",
+            \ 'GotoNextSpotAlpha'  :  "`]",
+            \ 'GotoPrevSpotAlpha'  :  "`[",
+            \ 'GotoNextLineByPos'  :  "]'",
+            \ 'GotoPrevLineByPos'  :  "['",
+            \ 'GotoNextSpotByPos'  :  "mn",
+            \ 'GotoPrevSpotByPos'  :  "mp",
+            \ 'GotoNextMarker'     :  "[+",
+            \ 'GotoPrevMarker'     :  "[-",
+            \ 'GotoNextMarkerAny'  :  "]=",
+            \ 'GotoPrevMarkerAny'  :  "[=",
+            \ 'ListLocalMarks'     :  "ms",
+            \ 'ListLocalMarkers'   :  "m?"
+            \ }
 let OmniCpp_DefaultNamespaces = ["_GLIBCXX_STD"]
 ":set tags+=~/Documents/example/tags
 " 正向遍历同名标签
@@ -181,37 +181,37 @@ let tagbar_width=32
 let g:tagbar_compact=1
 " 设置 ctags 对哪些代码元素生成标签
 let g:tagbar_type_cpp = {
-    \ 'kinds' : [
-        \ 'd:macros:1',
-        \ 'g:enums',
-        \ 't:typedefs:0:0',
-        \ 'e:enumerators:0:0',
-        \ 'n:namespaces',
-        \ 'c:classes',
-        \ 's:structs',
-        \ 'u:unions',
-        \ 'f:functions',
-        \ 'm:members:0:0',
-        \ 'v:global:0:0',
-        \ 'x:external:0:0',
-        \ 'l:local:0:0'
-     \ ],
-     \ 'sro'        : '::',
-     \ 'kind2scope' : {
-         \ 'g' : 'enum',
-         \ 'n' : 'namespace',
-         \ 'c' : 'class',
-         \ 's' : 'struct',
-         \ 'u' : 'union'
-     \ },
-     \ 'scope2kind' : {
-         \ 'enum'      : 'g',
-         \ 'namespace' : 'n',
-         \ 'class'     : 'c',
-         \ 'struct'    : 's',
-         \ 'union'     : 'u'
-     \ }
-\ }
+            \ 'kinds' : [
+            \ 'd:macros:1',
+            \ 'g:enums',
+            \ 't:typedefs:0:0',
+            \ 'e:enumerators:0:0',
+            \ 'n:namespaces',
+            \ 'c:classes',
+            \ 's:structs',
+            \ 'u:unions',
+            \ 'f:functions',
+            \ 'm:members:0:0',
+            \ 'v:global:0:0',
+            \ 'x:external:0:0',
+            \ 'l:local:0:0'
+            \ ],
+            \ 'sro'        : '::',
+            \ 'kind2scope' : {
+            \ 'g' : 'enum',
+            \ 'n' : 'namespace',
+            \ 'c' : 'class',
+            \ 's' : 'struct',
+            \ 'u' : 'union'
+            \ },
+            \ 'scope2kind' : {
+            \ 'enum'      : 'g',
+            \ 'namespace' : 'n',
+            \ 'class'     : 'c',
+            \ 'struct'    : 's',
+            \ 'union'     : 'u'
+            \ }
+            \ }
 " 修改ack.vim 默认选项
 let g:ack_default_options = " -H --nocolor --nogroup --column"
 " 使用 ctrlsf.vim 插件在工程内全局查找光标所在关键字，设置快捷键。快捷键速记法：search in project
@@ -254,20 +254,21 @@ let g:UltiSnipsJumpBackwardTrigger="<leader><s-tab>"
 let g:protodefprotogetter='~/.vim/bundle/vim-protodef/pullproto.pl'
 " 成员函数的实现顺序与声明顺序一致
 let g:disable_protodef_sorting=1
-" 引入 C++ 标准库tags
-set tags+=/usr/include/c++/4.8/stdcpp.tags
-set tags+=/usr/include/sys.tags
 " YCM 补全菜单配色
 " 菜单
 highlight Pmenu ctermfg=Black ctermbg=Grey guifg=#005f87 guibg=#EEE8D5
 " 选中项
 highlight PmenuSel ctermfg=LightBlue ctermbg=DarkBlue guifg=#AFD700 guibg=#106900
+inoremap <expr> <Space> pumvisible() ? "\<C-y>" : " "
 " 补全功能在注释中同样有效
 let g:ycm_complete_in_comments=1
 " 允许 vim 加载 .ycm_extra_conf.py 文件，不再提示
 let g:ycm_confirm_extra_conf=0
 " 开启 YCM 标签补全引擎
 "let g:ycm_collect_identifiers_from_tags_files=1
+" 引入 C++ 标准库tags
+set tags+=/usr/include/c++/4.8/stdcpp.tags
+set tags+=/usr/include/sys.tags
 " YCM 集成 OmniCppComplete 补全引擎，设置其快捷键
 inoremap <leader>; <C-x><C-o>
 " 补全内容不以分割子窗口形式出现，只显示补全列表
@@ -328,6 +329,13 @@ set undofile
 set undodir=~/.undo_history/
 "记录光标位置
 augroup resCur
-  autocmd!
-  autocmd BufReadPost * call setpos(".", getpos("'\""))
+    autocmd!
+    autocmd BufReadPost * call setpos(".", getpos("'\""))
 augroup END
+set path+=/usr/include/**
+"自动格式化插件vim-autoformat
+"clang-fromat作为c系列语言格式化工具
+let g:formatdef_clangformat_objc = '"clang-format -style=LLVM"'
+noremap <F3> :Autoformat<CR>
+"保存前自动格式化
+autocmd  BufWritePre * :Autoformat
